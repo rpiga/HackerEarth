@@ -11,8 +11,17 @@ print('Hi, %s.' % name)         # Writing output to STDOUT
 values_in = input().split()
 
 try:
-  L, R, K = values_in[0], values_in[1], values_in[2]
-  print("ok")
+  L, R, K = int(values_in[0]), int(values_in[1]), int(values_in[2])
 except:
-  print("ERROR")
+  print("ERROR (input)")
+  quit()
 
+if (L < 1 or L > R) or (R < L or R > 1000) or (K < 1 or K > 1000):
+  print("ERROR (values)")
+  quit()
+  
+count = 0
+for n in range(L, R+1):
+  count+=1 if (n%K== 0) else False
+  
+print(count)
