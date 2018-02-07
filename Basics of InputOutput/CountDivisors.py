@@ -8,10 +8,11 @@ print('Hi, %s.' % name)         # Writing output to STDOUT
 '''
 
 # Write your code here
-values_in = input().split()
+#values_in = input().split()
 
 try:
-  L, R, K = int(values_in[0]), int(values_in[1]), int(values_in[2])
+  #L, R, K = int(values_in[0]), int(values_in[1]), int(values_in[2])
+  L, R, K = map(int, input().split())
 except:
   print("ERROR (input)")
   quit()
