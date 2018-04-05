@@ -31,14 +31,3 @@ for n in range(tests):
         break
   
   print(total - 2*count)
-  """
-    count = 0
-    for n in string_a:
-      if n in string_b:
-        count += 1
-      else:
-        string_b_temp.append(n)
-
-  print(count, len(string_a) + len(string_b) - (2*count))
-  """
-  
