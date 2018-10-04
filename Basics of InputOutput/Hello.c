@@ -16,5 +16,5 @@ int main(){
 
 void main()
 {
-    printf("Hello Kirti");
+    printf("Hello World!");
 }
